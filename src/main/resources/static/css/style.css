@@ -1,0 +1,143 @@
+body {
+	background: #e2e2e2 !important;
+}
+
+.bg-primary {
+	background: #009688 !important;
+}
+
+.banner {
+	width: 100%;
+	height: 93vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/base.jpg);
+	background-size: cover;
+	color: white;
+
+}
+
+
+.my-card {
+	padding: 20px;
+	background: white;
+
+}
+
+.sidebar {
+	width: 18%;
+	background-color: white;
+	height: 100%;
+	position: fixed;
+	padding-top: 45px;
+	z-index: 9999999;
+
+}
+
+@media only screen and (max-width: 600px) {
+	.sidebar {
+		display: none;
+		width: 80% !important;
+		background-color: white;
+		height: 100vh;
+		position: fixed;
+		padding-top: 20px;
+
+
+	}
+
+	.content {
+		margin-left: 0 !important;
+	}
+}
+
+.sidebar a {
+	display: block;
+	width: 100%;
+	padding: 10px 25px;
+	text-decoration: none;
+	color: gray;
+}
+
+.sidebar a:hover {
+	background-color: #e2e2e2;
+}
+
+.sidebar .divider {
+	height: .5px;
+	width: 100%;
+	background: #e2e2e2;
+	margin-top: 10px;
+}
+
+.content {
+	margin-left: 20%;
+
+}
+
+.sidebar .crossbtn {
+	position: absolute;
+	top: 0;
+	right: 35px;
+	font-size: 30px;
+	cursor: pointer;
+
+}
+
+.my_profile_picture {
+	height: 35px;
+	width: 35px;
+	object-fit: cover;
+	border-radius: 50%;
+
+}
+
+.search-container {
+	position: relative;
+
+}
+
+.search-result {
+	position: absolute;
+	background: white;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid gray;
+	display: none;
+}
+.pagination .page-link {
+            color: black; /* Set the text color to red */
+        }
+.pagination .page-item.active .page-link {
+            background-color:gray; /* Set the background color of the active link to red */
+            color: white; /* Set the text color of the active link to white */
+        }
+.active{
+	background: #009688 ! important;
+	color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

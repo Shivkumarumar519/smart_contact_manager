@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+
+<head>
+	<meta charset="UTF-8">
+	<title>User Dashboard</title>
+</head>
+
+<body>
+	<section>
+		<div class="container">
+			<div class="card ml-2">
+				<div class="card-body">
+					<div th:if="${session.message}" class="container">
+						<div th:classappend="${'alert-'+session.message.type}" class="alert" role="alert">
+							<span th:text="${session.message.content}"></span>
+						</div>
+						<th:block th:text="${#session.removeAttribute('message')}"></th:block>
+					</div>
+					<div class="container text-center">
+						<img src="" style="width: 250px; height: 250px;" class="my_profile_picture"
+							th:src="@{'/img/'+${user.imageUrl}}" alt="">
+					</div>
+					<h1 class="text-center mt-3 text-secondary font-italic font-weight-light">
+						Start Adding your contact on cloud...
+					</h1>
+					<a th:href="@{/user/add-contact}" class="btn btn-primary mt-4 btn-block">Add New Contact</a>
+				</div>
+			</div>
+		</div>
+		<script>
+
+			$(document).ready(() => {
+				$(".item").removeClass("active");
+				$("#home").addClass("active");
+			});
+
+
+		</script>
+	</section>
+</body>
+
+</html>

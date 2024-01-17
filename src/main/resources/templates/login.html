@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>Please sign in</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="https://getbootstrap.com/docs/4.0/examples/signin/signin.css" rel="stylesheet"
+		crossorigin="anonymous" />
+</head>
+
+<body>
+	<section>
+		<div class="container ">
+			<div class="row mt-4">
+				<div class="col-md-4 offset-md-4">
+					<div class="my-card mt-2">
+						<form class="form" method="post" th:action="@{/do_login}">
+							<div class="container text-center">
+								<img class="" style="width: 80px; " th:src="@{/img/user.png}" alt="" />
+							</div>
+							<h1 class="text-center">Please Login</h1>
+							<hr>
+							<div th:if="${param.error}" class="alert alert-danger">
+								Invalid Username and password
+							</div>
+							<div th:if="${param.logout}" class="alert alert-success">
+								You have been logged out
+							</div>
+							<div th:if="${param.change}" class="alert alert-success">
+								<p th:text="${param.change}"></p>
+							</div>
+							<div class="form-group">
+								<label for="username">Your User name</label>
+								<input type="text" class="form-control" name="username" placeholder="Enter Username"
+									required autofocus />
+							</div>
+							<div class="form-group">
+								<label for="password">Your Password</label>
+								<input type="password" class="form-control" name="password" placeholder="Enter Password"
+									required />
+							</div>
+							<div class="container text-right">
+								
+								<a th:href="@{/forgot}">Forgot Password</a>
+							</div>
+							<div class="text-center mt-2">
+								<button class="btn btn-lg btn-primary" type="submit">Sign in</button>
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+	</section>
+
+</body>
+
+</html>
