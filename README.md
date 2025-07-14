@@ -128,27 +128,17 @@ spring.datasource.password=your_db_password
 
 3. Email Configuration
 
-Properties props = new Properties();
-
-props.put("mail.smtp.auth", "true");
-
-props.put("mail.smtp.starttls.enable", "true");
-
-props.put("mail.smtp.host", "smtp.gmail.com");
-
-props.put("mail.smtp.port", "587");
-
-Session session = Session.getInstance(props,
-
-    new javax.mail.Authenticator() {
-    
-        protected PasswordAuthentication getPasswordAuthentication() {
-        
-            return new PasswordAuthentication("your_email@gmail.com", "your_app_password");
-            
-        }
-        
-    });
+Properties props = new Properties();  
+props.put("mail.smtp.auth", "true");  
+props.put("mail.smtp.starttls.enable", "true");  
+props.put("mail.smtp.host", "smtp.gmail.com");  
+props.put("mail.smtp.port", "587");  
+Session session = Session.getInstance(props,  
+    new javax.mail.Authenticator() {  
+        protected PasswordAuthentication getPasswordAuthentication() {  
+            return new PasswordAuthentication("your_email@gmail.com", "your_app_password");  
+        }  
+    });  
 
 
 4. CREATE DATABASE scm;
@@ -159,7 +149,7 @@ Session session = Session.getInstance(props,
 
 7. Visit in Browser
 
-http://localhost:8080
+http://localhost:8282
 
 <img width="1366" height="768" alt="Screenshot (33)" src="https://github.com/user-attachments/assets/d42218b0-646b-4401-a796-e284af9a1988" />
 <img width="1366" height="768" alt="Screenshot (32)" src="https://github.com/user-attachments/assets/d86221b0-4a75-4042-b461-f36f37ee3675" />
