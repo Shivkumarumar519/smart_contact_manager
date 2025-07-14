@@ -3,45 +3,77 @@
 Smart Contact Manager is a full-featured Spring Boot web application designed to help users securely manage their contacts with ease. It includes advanced features like OTP-based password reset, email notifications, and data export in Excel format.
 
 🚀 Features
+
 🔐 User Registration and Login
+
 🔒 OTP-based Password Reset via Email
+
 📧 Email API integration for notifications
+
 👥 Role-based Access Control (User/Admin)
+
 📒 Contact CRUD (Create, Read, Update, Delete)
+
 📤 Export Contacts to Excel (.xlsx) Format
+
 📁 Upload Profile Images for Contacts
+
 🔎 Search and Filter Contacts
+
 🧾 Clean UI with Thymeleaf Templates
+
 🔐 Secured with Spring Security
+
 🚫 Unauthorized Access Restriction
+
 📊 Admin Dashboard
+
 
 🛠 Tech Stack
 Layer	Technology
+
 Frontend	HTML, CSS, Bootstrap, Thymeleaf
+
 Backend	Java 17, Spring Boot, Spring MVC, Spring Security
+
 Database	MySQL
+
 Email Service	JavaMailSender (Spring Boot Starter Mail)
+
 Excel Export	Apache POI
+
 Build Tool	Maven
+
 Template Engine	Thymeleaf
 
 
 📤 Excel Export Feature
+
 Users can export all their contact data into an Excel file with one click.
+
 ✔ Uses Apache POI
+
 ✔ Saves file as .xlsx
+
 ✔ Custom styling and formatting supported
 
+
 🔐 OTP-based Password Reset
+
 If a user forgets their password:
+
 They enter their registered email.
+
 An OTP is sent to their email.
+
 User verifies OTP and sets a new password.
 
 ✔ Built using JavaMailSender
+
 ✔ OTP has an expiration time
+
 ✔ Secure and user-friendly flow
+
 
 🏗 Project Structure
 
@@ -83,18 +115,23 @@ SCM/
 1. Clone the Repository
 
 git clone https://github.com/yourusername/SmartContactManager.git
+
 cd SmartContactManager
 
 2. Set MySQL Credentials in application.properties
 
 spring.datasource.url=jdbc:mysql://localhost:3306/scm
+
 spring.datasource.username=your_db_username
+
 spring.datasource.password=your_db_password
 
 3. Email Configuration
 
 Properties props = new Properties();
+
 props.put("mail.smtp.auth", "true");
+
 props.put("mail.smtp.starttls.enable", "true");
 props.put("mail.smtp.host", "smtp.gmail.com");
 props.put("mail.smtp.port", "587");
