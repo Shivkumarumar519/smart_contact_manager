@@ -19,7 +19,7 @@ public class EmailService {
 
 		boolean f=false;
 		
-		String from ="shivkumarumar519@gmail.com";
+		String from ="your_email@gmail.com";
 		//
 		
 		
@@ -45,7 +45,7 @@ public class EmailService {
 			@Override
 			protected PasswordAuthentication getPasswordAuthentication() {
 
-				return new PasswordAuthentication("shivkumarumar519@gmail.com","yezzkjhzlxszehnr");
+				return new PasswordAuthentication("your_email@gmail.com","your_secure_code");
 			}
 
 		});
