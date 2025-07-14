@@ -1,4 +1,5 @@
-📇 Smart Contact Manager
+# Smart Contact Manager
+
 Smart Contact Manager is a full-featured Spring Boot web application designed to help users securely manage their contacts with ease. It includes advanced features like OTP-based password reset, email notifications, and data export in Excel format.
 
 🚀 Features
@@ -44,24 +45,41 @@ User verifies OTP and sets a new password.
 
 🏗 Project Structure
 
+
 SCM/
+
 ├── src/
+
 │   ├── main/
+
 │   │   ├── java/com/scm/
+
 │   │   │   ├── controller/
+
 │   │   │   ├── dto/
+
 │   │   │   ├── entity/
+
 │   │   │   ├── repository/
+
 │   │   │   ├── service/
+
 │   │   │   └── SmartContactManagerApplication.java
+
 │   │   └── resources/
+
 │   │       ├── static/
+
 │   │       ├── templates/
+
 │   │       └── application.properties
+
 ├── pom.xml
+
 └── README.md
 
 📦 Setup Instructions
+
 1. Clone the Repository
 
 git clone https://github.com/yourusername/SmartContactManager.git
@@ -108,6 +126,9 @@ http://localhost:8080
 <img width="1366" height="768" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/4515a0cb-4cec-4985-91cd-b18b514f4d50" />
 <img width="1366" height="768" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/b54b3e24-f938-4b8a-9738-9962f7e0cad7" />
 
+
 👨‍💻 Author
+
 Shiv Kumar Umar
+
 Java Fullstack Developer
