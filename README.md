@@ -32,17 +32,17 @@ Smart Contact Manager is a full-featured Spring Boot web application designed to
 🛠 Tech Stack
 Layer	Technology
 
-Frontend	HTML, CSS, Bootstrap, Thymeleaf
+Frontend -	HTML, CSS, Bootstrap, Thymeleaf
 
-Backend	Java 17, Spring Boot, Spring MVC, Spring Security
+Backend -  Java 17, Spring Boot, Spring MVC, Spring Security
 
-Database	MySQL
+Database - MySQL
 
-Email Service	JavaMailSender (Spring Boot Starter Mail)
+Email Service -	JavaMailSender (Spring Boot Starter Mail)
 
-Excel Export	Apache POI
+Excel Export - Apache POI
 
-Build Tool	Maven
+Build Tool - Maven
 
 Template Engine	Thymeleaf
 
